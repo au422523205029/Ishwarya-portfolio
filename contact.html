@@ -58,21 +58,21 @@
 
         <h3>Send a message</h3>
 
-        <form onsubmit="event.preventDefault(); alert('Please send your message using email.');">
+        <form action="https://formspree.io/f/xvkgwnel" method="POST">
 
           <div class="field">
             <label>Your name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
           </div>
 
           <div class="field">
             <label>Email address</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
           </div>
 
           <div class="field">
             <label>Message</label>
-            <textarea name="message"></textarea>
+            <textarea name="message" required></textarea>
           </div>
 
           <button class="btn" type="submit">
